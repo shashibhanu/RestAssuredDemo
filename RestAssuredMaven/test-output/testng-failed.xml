@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [restassuredjarsuite]">
+  <listeners>
+    <listener class-name="utilities.Listeners2"/>
+  </listeners>
+  <test thread-count="5" name="restassuredjartest(failed)">
+    <classes>
+      <class name="testCases.DeleteTC">
+        <methods>
+          <include name="deleteEmpRecord"/>
+        </methods>
+      </class> <!-- testCases.DeleteTC -->
+    </classes>
+  </test> <!-- restassuredjartest(failed) -->
+</suite> <!-- Failed suite [restassuredjarsuite] -->

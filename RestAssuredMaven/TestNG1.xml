@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "restassuredjarsuite">
+<listeners>
+<listener class-name = "utilities.Listeners2"/>
+</listeners>
+<test name = "restassuredjartest">
+<classes>
+<class name = "testCases.GetRespBody"/>
+<class name = "testCases.GetStatcodeStatline"/>
+<class name = "testCases.GetUseofJSONpath"/>
+<class name = "testCases.GetResponseFromDirectURL"/>
+</classes>
+</test>
+</suite>
