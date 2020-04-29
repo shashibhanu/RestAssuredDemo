@@ -1,49 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="restassuredjarsuite" duration-ms="16982" started-at="2020-04-26T22:24:23 IST" finished-at="2020-04-26T22:24:40 IST">
+  <suite name="Default suite" duration-ms="6904" started-at="2020-04-28T21:08:15 IST" finished-at="2020-04-28T21:08:22 IST">
     <groups>
     </groups>
-    <test name="restassuredjartest" duration-ms="16982" started-at="2020-04-26T22:24:23 IST" finished-at="2020-04-26T22:24:40 IST">
-      <class name="testCases.GetResponseFromDirectURL">
-        <test-method status="PASS" signature="getUserDetails()[pri:0, instance:testCases.GetResponseFromDirectURL@26aa12dd]" name="getUserDetails" duration-ms="2897" started-at="2020-04-26T22:24:36 IST" finished-at="2020-04-26T22:24:39 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUserDetails -->
-      </class> <!-- testCases.GetResponseFromDirectURL -->
-      <class name="testCases.GetStatcodeStatline">
-        <test-method status="PASS" signature="getUserDetails()[pri:0, instance:testCases.GetStatcodeStatline@1c3a4799]" name="getUserDetails" duration-ms="2784" started-at="2020-04-26T22:24:29 IST" finished-at="2020-04-26T22:24:32 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUserDetails -->
-      </class> <!-- testCases.GetStatcodeStatline -->
-      <class name="testCases.GetUseofJSONpath">
-        <test-method status="PASS" signature="user()[pri:0, instance:testCases.GetUseofJSONpath@131276c2]" name="user" duration-ms="3794" started-at="2020-04-26T22:24:32 IST" finished-at="2020-04-26T22:24:36 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- user -->
-      </class> <!-- testCases.GetUseofJSONpath -->
-      <class name="testCases.GetRespBody">
-        <test-method status="PASS" signature="getUserDetails()[pri:0, instance:testCases.GetRespBody@694e1548]" name="getUserDetails" duration-ms="5042" started-at="2020-04-26T22:24:24 IST" finished-at="2020-04-26T22:24:29 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUserDetails -->
-      </class> <!-- testCases.GetRespBody -->
-      <class name="testCases.DeleteTC">
-        <test-method status="FAIL" signature="deleteEmpRecord()[pri:0, instance:testCases.DeleteTC@3fd7a715]" name="deleteEmpRecord" duration-ms="1626" started-at="2020-04-26T22:24:39 IST" finished-at="2020-04-26T22:24:40 IST">
+    <test name="Default test" duration-ms="6904" started-at="2020-04-28T21:08:15 IST" finished-at="2020-04-28T21:08:22 IST">
+      <class name="bddTestCases.DeleteDemo">
+        <test-method status="FAIL" signature="deleteMethod()[pri:0, instance:bddTestCases.DeleteDemo@5d76b067]" name="deleteMethod" duration-ms="6829" started-at="2020-04-28T21:08:15 IST" finished-at="2020-04-28T21:08:22 IST">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[1 expectation failed.
+JSON path status doesn't match.
+Expected: success
+  Actual: failed
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:751)
-at org.testng.Assert.assertEquals(Assert.java:761)
-at testCases.DeleteTC.deleteEmpRecord(DeleteTC.java:28)
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+JSON path status doesn't match.
+Expected: success
+  Actual: failed
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)
+at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:212)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)
+at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+at bddTestCases.DeleteDemo.deleteMethod(DeleteDemo.java:23)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -77,8 +97,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteEmpRecord -->
-      </class> <!-- testCases.DeleteTC -->
-    </test> <!-- restassuredjartest -->
-  </suite> <!-- restassuredjarsuite -->
+        </test-method> <!-- deleteMethod -->
+      </class> <!-- bddTestCases.DeleteDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

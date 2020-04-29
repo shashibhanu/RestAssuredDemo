@@ -61,7 +61,7 @@ public class PostDataProvider2 {
 @DataProvider(name="userdataprovider")
 String [][] getData() throws IOException
 {
-	String path = "C:\\Drivers\\ShashiEclipseWorkspace\\RestAssuredMaven\\Data\\Postdata.xlsx";
+	String path = "C:\\Users\\sony\\git\\RestAssuredDemo\\RestAssuredMaven\\Data\\Postdata.xlsx";
 	 int rownum = ExcelDataProvider.getRowCount(path, "Sheet1");
 	 int colcount = ExcelDataProvider.getCellCount(path, "Sheet1",1);
      String[][] data = new String[rownum][colcount];

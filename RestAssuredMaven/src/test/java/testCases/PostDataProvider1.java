@@ -58,7 +58,7 @@ public class PostDataProvider1 {
 @DataProvider(name="userdataprovider")
 String [][] getData()
 {
-String [][] data = {{"FNA1","LNA1","UNA1","PSA1","EMA1"},{"FNA2","LNA2","UNA2","PSA2","EMA2"}};
+String [][] data = {{"FNA6","LNA6","UNA6","PSA6","EMA6"},{"FNA6","LNA6","UNA6","PSA6","EMA6"}};
 return(data);
 }
 }

@@ -31,7 +31,7 @@ public class PostFromFile {
 		request.header("Content-Type", "application/json");
 		
 		
-		File json = new File("C:\\Drivers\\ShashiEclipseWorkspace\\RestAssuredMaven\\Data\\jsonpostfiledata");
+		File json = new File("C:\\Users\\sony\\git\\RestAssuredDemo\\RestAssuredMaven\\Data\\jsonpostfiledata");
 
 		// Add string form of JSON to the body of the request
 		request.body(json);

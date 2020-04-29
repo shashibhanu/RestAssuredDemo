@@ -1,9 +1,9 @@
 package bddTestCases;
 
-import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
 
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class GetWeatherDetails {
 	@Test

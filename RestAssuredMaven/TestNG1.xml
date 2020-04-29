@@ -5,10 +5,14 @@
 </listeners>
 <test name = "restassuredjartest">
 <classes>
-<class name = "testCases.GetRespBody"/>
-<class name = "testCases.GetStatcodeStatline"/>
-<class name = "testCases.GetUseofJSONpath"/>
-<class name = "testCases.GetResponseFromDirectURL"/>
+<class name = "testCases.GetReadfromExcel"/>
+<class name = "testCases.PutBasic"/>
+<class name = "testCases.PostBasic"/>
+<class name = "testCases.PostFromUtilityClass"/>
+<class name = "testCases.PostfromUtilityClassHashmap"/>
+<class name = "testCases.PostDataProvider1"/>
+<class name = "testCases.PostDataProvider2"/>
+<class name = "testCases.PostFromFile"/>
 </classes>
 </test>
 </suite>

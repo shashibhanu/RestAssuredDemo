@@ -2,7 +2,6 @@ package testCases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -10,8 +9,9 @@ import io.restassured.specification.RequestSpecification;
 public class DeleteTC {
 	@Test
 	public void deleteEmpRecord() {
+		//logger.info("****************Delete Test******************************");
 	 
-	 int empid = 16;
+	 int empid = 12;
 	 
 	 RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
 	 RequestSpecification request = RestAssured.given(); 

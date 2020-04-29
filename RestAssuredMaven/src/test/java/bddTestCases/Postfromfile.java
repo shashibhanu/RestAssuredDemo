@@ -17,7 +17,7 @@ public class Postfromfile {
 	{
 		RestAssured.baseURI="http://restapi.demoqa.com/customer";
 		RestAssured.basePath="/register";
-		File json = new File("C:\\Drivers\\ShashiEclipseWorkspace\\RestAssuredMaven\\Data\\jsonpostfiledata");
+		File json = new File("C:\\Users\\sony\\git\\RestAssuredDemo\\RestAssuredMaven\\Data\\jsonpostfiledata");
 		Response resp = 
 		given()
 		.contentType("application/json")

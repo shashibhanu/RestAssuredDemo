@@ -6,11 +6,27 @@
   </listeners>
   <test thread-count="5" name="restassuredjartest(failed)">
     <classes>
-      <class name="testCases.DeleteTC">
+      <class name="testCases.PostBasic">
         <methods>
-          <include name="deleteEmpRecord"/>
+          <include name="validateStatusCode"/>
+          <include name="validateResponseBody"/>
         </methods>
-      </class> <!-- testCases.DeleteTC -->
+      </class> <!-- testCases.PostBasic -->
+      <class name="testCases.PostDataProvider2">
+        <methods>
+          <include name="user" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- testCases.PostDataProvider2 -->
+      <class name="testCases.PostDataProvider1">
+        <methods>
+          <include name="user" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- testCases.PostDataProvider1 -->
+      <class name="testCases.PostFromFile">
+        <methods>
+          <include name="user"/>
+        </methods>
+      </class> <!-- testCases.PostFromFile -->
     </classes>
   </test> <!-- restassuredjartest(failed) -->
 </suite> <!-- Failed suite [restassuredjarsuite] -->

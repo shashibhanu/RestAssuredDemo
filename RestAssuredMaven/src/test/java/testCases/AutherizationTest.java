@@ -2,7 +2,6 @@ package testCases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import io.restassured.RestAssured;
 import io.restassured.authentication.PreemptiveBasicAuthScheme;
 import io.restassured.http.Method;
@@ -13,7 +12,7 @@ public class AutherizationTest {
 	@Test
 	void user()
 	{
-
+    //logger.info("****************Autherization Test******************************");
 	RestAssured.baseURI = "http://restapi.demoqa.com/authentication/CheckForAuthentication";
 	PreemptiveBasicAuthScheme authsch = new PreemptiveBasicAuthScheme();
 	authsch.setUserName("ToolsQA");

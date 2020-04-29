@@ -19,7 +19,7 @@ public class GetReadfromExcel {
 		Response response;
 
 		// Path from where the excel file has to be read
-		String path = "C:\\Drivers\\ShashiEclipseWorkspace\\RestAssuredMaven\\Data\\Getdata.xlsx";
+		String path = "C:\\Users\\sony\\git\\RestAssuredDemo\\RestAssuredMaven\\Data\\Getdata.xlsx";
 
 		// File input stream which needs the input as the file location
 		FileInputStream fis = new FileInputStream(path);
