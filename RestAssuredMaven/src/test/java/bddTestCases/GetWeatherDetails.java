@@ -6,7 +6,7 @@ import static org.hamcrest.Matchers.*;
 import org.testng.annotations.*;
 
 public class GetWeatherDetails {
-	@Test
+	//@Test
 	void main()
 	{
 		given()

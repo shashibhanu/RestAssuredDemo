@@ -12,7 +12,7 @@ import io.restassured.response.Response;
 
 public class Postfromfile {
 	
-	@Test
+	//@Test
 	void registerCustomer()
 	{
 		RestAssured.baseURI="http://restapi.demoqa.com/customer";

@@ -21,6 +21,7 @@ public class GetUseofJSONpath {
  
         //Makes calls to the server using Method type.
         Response response = httpRequest.request(Method.GET, "2");
+        System.out.println("Body is"+response.body().asString());
 		// First get the JsonPath object instance from the Response interface
 		JsonPath jsonPathEvaluator = response.jsonPath();
 

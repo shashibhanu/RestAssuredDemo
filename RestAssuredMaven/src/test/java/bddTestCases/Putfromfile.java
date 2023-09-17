@@ -11,7 +11,7 @@ import io.restassured.response.Response;
 
 public class Putfromfile {
 	
-	@Test
+	//@Test
 	void registerCustomer()
 	{
 		RestAssured.baseURI="http://dummy.restapiexample.com/api/v1";

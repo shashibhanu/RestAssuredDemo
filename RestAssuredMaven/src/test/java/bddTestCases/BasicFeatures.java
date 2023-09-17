@@ -9,7 +9,7 @@ import io.restassured.RestAssured;
 public class BasicFeatures {
 	
 	//testing status code
-	//@Test
+	@Test
 	public void testStatCode()
 	{
 		given().
@@ -19,7 +19,7 @@ public class BasicFeatures {
 	}
 	
 	//logging body in console
-	//@Test
+	@Test
 	public void testLogging()
 	{
 		given().
@@ -30,7 +30,7 @@ public class BasicFeatures {
 	}
 	
 	//logging all in console
-	//@Test
+	@Test
 		public void testLoggingAll()
 		{
 			given().
@@ -41,7 +41,7 @@ public class BasicFeatures {
 		}
 		
 		//Test Equal to function 
-		//@Test
+		@Test
 			public void testEqualTo()
 			{
 				given().
@@ -52,7 +52,7 @@ public class BasicFeatures {
 			}
 			
 			//Test Equal to function 
-			//@Test
+			@Test
 				public void testHasFunction()
 				{
 					given().
@@ -63,7 +63,7 @@ public class BasicFeatures {
 				}
 				
 				//sending parameters
-				//@Test
+				@Test
 					public void sendParam()
 					{
 						given().
